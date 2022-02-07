@@ -1,0 +1,80 @@
+nav {
+  background: #000000ad;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 2;
+  color: #fff;
+  position: fixed;
+  width: 1750px;
+}
+.link {
+  color: #fff;
+  text-decoration: none;
+}
+.link:hover {
+  color: rgb(214, 32, 62);
+}
+.langImg {
+  width: 30px;
+}
+.logo {
+  width: 80px;
+}
+nav div {
+  display: flex;
+  align-items: center;
+  font-size: 1.5em;
+}
+nav div span {
+  padding: 10px;
+}
+.pointer {
+  cursor: pointer;
+}
+.mobile-menu {
+  background: none;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+.mobile-menu img {
+  background: #000000ad;
+}
+.mobile-menu-links {
+  flex-direction: column;
+  align-items: baseline;
+  border: 1px solid red;
+  background: #000000ad;
+  margin-top: 5px;
+  padding: 10px;
+  margin-left: 0px;
+  animation-name: motto;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+@keyframes motto {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@media screen and (max-width: 1800px) {
+  nav div {
+    padding-right: 50px;
+  }
+  nav {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .mobile-menu-links span {
+    padding: 6px;
+    font-size: 0.8em;
+  }
+}

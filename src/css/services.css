@@ -1,0 +1,46 @@
+#services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.service {
+  width: 400px;
+  text-align: center;
+  margin: 20px;
+  background: #fff;
+  padding: 20px;
+  transition: 300ms ease;
+}
+.service:hover {
+  transform: scale(1.1);
+}
+@media screen and (max-width: 1024px) {
+  .service {
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+  }
+  .service img {
+    width: 100px;
+  }
+  .service h1 {
+    font-size: 1.2em;
+  }
+  .service p {
+    font-size: 0.8em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .service {
+    width: 120px;
+    margin: 10px;
+    padding: 10px;
+    height: 180px;
+  }
+  .service img {
+    width: 50px;
+  }
+  .service h1 {
+    font-size: 0.7em;
+  }
+}

@@ -1,0 +1,11 @@
+.App {
+  max-width: 1800px;
+  margin: 0 auto;
+  background: aliceblue;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+}

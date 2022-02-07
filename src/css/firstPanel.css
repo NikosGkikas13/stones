@@ -1,0 +1,69 @@
+.firstPanel {
+  background: url("../img/firstPanel-background.jpg");
+  height: 870px;
+  position: relative;
+  padding: 135px 0px 0px 0px;
+}
+.firstText {
+  text-align: center;
+  color: #fff;
+  font-size: 2em;
+  position: relative;
+  top: 30%;
+  border: 2px solid red;
+  background: #0000009c;
+}
+.firstText h1,
+.firstText p,
+.firstText button {
+  margin: 10px;
+}
+.buttonStyle {
+  background: red;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  width: 300px;
+  height: 50px;
+  font-size: 0.7em;
+}
+.buttonStyle:hover {
+  cursor: pointer;
+  background: #a00000;
+}
+@media screen and (max-width: 1024px) {
+  .firstText h1 {
+    font-size: 1.2em;
+  }
+  .firstText p {
+    font-size: 0.8em;
+  }
+  .firstPanel {
+    height: 700px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .firstText h1 {
+    font-size: 1em;
+  }
+  .firstText p {
+    font-size: 0.6em;
+  }
+  .firstText button {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 480px) {
+  .firstText h1 {
+    font-size: 0.8em;
+  }
+  .firstText button {
+    font-size: 0.5em;
+  }
+  .buttonStyle {
+    width: 200px;
+  }
+  .firstPanel {
+    height: 500px;
+  }
+}

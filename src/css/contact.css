@@ -1,0 +1,120 @@
+#contact {
+  background: url("../img/contact-bg.png");
+  padding: 100px;
+  text-align: center;
+  color: #fff;
+}
+#contact h1 {
+  font-size: 4em;
+}
+form {
+  justify-content: center;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 800px;
+}
+input,
+textarea {
+  border: 1px solid #fff;
+  background: #fff6;
+  outline: none;
+  color: #fff;
+}
+input:focus,
+textarea:focus {
+  border: 1px solid red;
+}
+::placeholder {
+  color: #fff;
+  font-size: 1.5em;
+}
+input {
+  width: 100%;
+  padding: 20px;
+  margin: 20px;
+}
+textarea {
+  width: 100%;
+  padding: 20px;
+  margin: 20px;
+  height: 300px;
+}
+form div {
+  display: flex;
+  flex-direction: column;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px rgb(2, 2, 2) inset !important;
+}
+input:-webkit-autofill {
+  -webkit-text-fill-color: rgb(255, 255, 255) !important;
+}
+form .buttonStyle {
+  font-size: 1.5em;
+  width: 180px;
+}
+@media screen and (max-width: 1024px) {
+  form {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 768px) {
+  form {
+    width: 400px;
+  }
+  input {
+    width: 100%;
+    padding: 15px;
+    margin: 15px;
+  }
+}
+@media screen and (max-width: 600px) {
+  #contact h1 {
+    font-size: 3em;
+  }
+  form {
+    width: 300px;
+  }
+  textarea {
+    height: 200px;
+  }
+}
+@media screen and (max-width: 320px) {
+  #contact {
+    padding: 0px;
+  }
+}
+@media screen and (max-width: 480px) {
+  #contact {
+    padding: 10px;
+  }
+  form {
+    width: 270px;
+  }
+  #contact h1 {
+    font-size: 2em;
+  }
+  input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+  }
+  textarea {
+    padding: 10px;
+    margin: 10px;
+    height: 150px;
+  }
+}
