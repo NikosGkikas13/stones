@@ -11,6 +11,19 @@ import varietyHover from "../img/variety-service-hover.png";
 import trustHover from "../img/trust-service-hover.png";
 import proffesionalismHover from "../img/proffesionalism-service-hover.png";
 import experienceHover from "../img/service-experience-hover.png";
+import petres1 from "../img/silderImages/petres1.jpg";
+import petres2 from "../img/silderImages/petres2.jpg";
+import petres3 from "../img/silderImages/petres3.jpg";
+import petres4 from "../img/silderImages/petres4.jpg";
+import petres5 from "../img/silderImages/petres5.jpg";
+import petres6 from "../img/silderImages/petres6.jpg";
+import petres7 from "../img/silderImages/petres7.jpg";
+import petres8 from "../img/silderImages/petres8.jpg";
+import petres9 from "../img/silderImages/petres9.jpg";
+import petres10 from "../img/silderImages/petres10.jpg";
+import petres11 from "../img/silderImages/petres11.jpg";
+import petres12 from "../img/silderImages/petres12.jpg";
+
 export const grData = {
   img: gr,
   nav: ["Αρχική", "Υπηρεσίες", "Έργα", "Επικοινωνία"],
@@ -58,23 +71,37 @@ export const grData = {
     },
   ],
   slider: {
+    categoriesAll: {
+      img: [
+        petres1,
+        petres4,
+        petres5,
+        petres8,
+        petres9,
+        petres2,
+        petres6,
+        petres7,
+        petres11,
+        petres12,
+      ],
+    },
     categories: [
       {
         name: "Κατηγορία 1",
-        img: [variety, trust, price],
+        img: [petres1, petres4, petres5, petres8, petres9],
       },
       {
         name: "Κατηγορία 2",
-        img: [proffesionalismHover, creativeHover],
+        img: [petres2, petres6, petres7],
       },
       {
         name: "Κατηγορία 3",
-        img: [proffesionalism, creative],
+        img: [petres11, petres12],
       },
-      {
-        name: "Κατηγορία 4",
-        img: [varietyHover, priceHover, trustHover],
-      },
+      // {
+      //   name: "Κατηγορία 4",
+      //   img: [petres10, petres11, petres12],
+      // },
     ],
   },
   contact: {

@@ -3,19 +3,27 @@ import Slider from "react-slick";
 import "../css/gallery.css";
 import { grData } from "../data/data";
 import dot from "../img/dot.png";
+import ImageMagnifier from "./ImageMagnifier";
 const Gallery = (props) => {
   const galleryRef = useRef();
   useEffect(() => {
     props.scroll(2, 2, galleryRef.current);
   }, []);
+  //USESTATE FOR CATEGORY IMAGES
   const [sliderImgArray, setSliderImgArray] = useState(
     grData.slider.categories[0].img
   );
-
+  //USESTATE FOR CATEGORY IMAGES
+  //Zoom slider images
+  const zoomSliderImg = () => {
+    console.log("hi");
+  };
+  //Zoom slider images
   const sliderSettings = {
     dots: true,
     arrows: false,
-    fade: true,
+    easing: true,
+    speed: 800,
     appendDots: (dots) => <ul>{dots}</ul>,
     customPaging: (i) => (
       <div className="dots">
@@ -34,6 +42,7 @@ const Gallery = (props) => {
 
   return (
     <section ref={galleryRef} id="gallery">
+      {/* CATEGORY BUTTONS
       <div className="categories">
         {grData.slider.categories.map((item) => {
           return (
@@ -43,9 +52,15 @@ const Gallery = (props) => {
           );
         })}
       </div>
+      CATEGORY BUTTONS */}
       <Slider className="big_slider" {...sliderSettings}>
-        {sliderImgArray.map((item) => {
-          return <img className="sliderImg" src={item} alt="" />;
+        {grData.slider.categoriesAll.img.map((item, index) => {
+          const sliderClass = `sliderImg ${index}`;
+          return (
+            <>
+              <img className={sliderClass} src={item} alt="" />
+            </>
+          );
         })}
       </Slider>
     </section>

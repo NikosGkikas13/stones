@@ -40,7 +40,7 @@ const Nav = (props) => {
             );
           })}
 
-          <img className="langImg" src={grData.img} alt="" />
+          {/* <img className="langImg" src={grData.img} alt="" /> */}
         </div>
       </nav>
     );

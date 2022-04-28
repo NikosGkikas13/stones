@@ -1,5 +1,5 @@
 footer {
-  padding: 50px 50px 10px 50px;
+  padding: 0px 50px 10px 50px;
   background-color: black;
   color: #fff;
 }
@@ -11,6 +11,7 @@ footer {
 .footer-contact {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 .footer-contact span:first-child {
   margin-bottom: 10px;

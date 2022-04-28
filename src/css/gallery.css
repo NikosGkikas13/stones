@@ -1,5 +1,6 @@
 #gallery {
   background: #fff;
+  padding-top: 20px;
 }
 .categories {
   display: flex;
@@ -27,12 +28,17 @@
   padding: 0;
 }
 .sliderImg {
-  width: 200px !important;
+  width: auto !important;
   margin: 0 auto !important;
-  display: block !important;
+  /* display: block !important; */
+  height: 650px;
+  transition: 1s ease-in;
 }
+
 .slick-dots li {
   cursor: pointer;
+}
+.sliderZoom {
 }
 @media screen and (max-width: 600px) {
   .categories button {

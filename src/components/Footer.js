@@ -19,8 +19,21 @@ const Footer = () => {
           }
         />
         <div className="footer-links">
-          {grData.nav.map((item) => {
-            return <span className="pointer link">{item}</span>;
+          {grData.nav.map((item, index) => {
+            // console.log(index);
+            let filteredID = idState.id.filter((id) => id == index);
+            return (
+              <span
+                className="pointer link"
+                onClick={() =>
+                  idState.ref[filteredID].scrollIntoView({
+                    block: "center",
+                  })
+                }
+              >
+                {item}
+              </span>
+            );
           })}
         </div>
         <div className="footer-contact">

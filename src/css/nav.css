@@ -1,13 +1,12 @@
 nav {
   background: #000000ad;
-  padding: 25px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   z-index: 2;
   color: #fff;
   position: fixed;
-  width: 1750px;
+  width: 1790px;
 }
 .link {
   color: #fff;
@@ -25,10 +24,10 @@ nav {
 nav div {
   display: flex;
   align-items: center;
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 nav div span {
-  padding: 10px;
+  padding: 15px;
 }
 .pointer {
   cursor: pointer;

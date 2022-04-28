@@ -34,7 +34,7 @@ function App() {
       <Services scroll={stateManagement} />
       <Gallery scroll={stateManagement} />
       <Contact scroll={stateManagement} />
-      <Footer />
+      <Footer scroll={stateManagement} />
     </div>
   );
 }
